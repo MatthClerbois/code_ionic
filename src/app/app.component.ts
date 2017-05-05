@@ -31,7 +31,7 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'User', component: UserPage },
+      { title: 'Users', component: UserPage },
       { title: 'Test', component: TestPage },
       { title: 'Item List', component: ListPage }
     ];
