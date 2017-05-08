@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import {Database} from '@ionic/cloud-angular';
 /**
  * Generated class for the User page.
  *
@@ -14,7 +14,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class UserPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(	
+	public navCtrl: NavController,
+	public navParams: NavParams,
+  	private database : Database) {  	
+	    this.database.connect();
   }
 
   ionViewDidLoad() {

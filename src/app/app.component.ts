@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 
+import {Deploy} from '@ionic/cloud-angular';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { HomePage } from '../pages/hello-ionic/hello-ionic';
@@ -24,7 +25,8 @@ export class MyApp {
     public platform: Platform,
     public menu: MenuController,
     public statusBar: StatusBar,
-    public splashScreen: SplashScreen
+    public splashScreen: SplashScreen,
+    public deploy: Deploy
   ) {
     this.initializeApp();
 
