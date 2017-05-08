@@ -7,6 +7,7 @@ import { HomePage } from '../pages/hello-ionic/hello-ionic';
 import { UserPage } from '../pages/user/user';
 import { TestPage } from '../pages/test/test';
 import { ListPage } from '../pages/list/list';
+import { LoginPage } from '../pages/login/login';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,7 +19,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HomePage the root (or first) page
-  rootPage = HomePage;
+  rootPage = LoginPage;
   pages: Array<{title: string, component: any}>;
 
   constructor(

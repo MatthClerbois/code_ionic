@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/hello-ionic/hello-ionic';
 import { TestPage } from '../pages/test/test';
+import { LoginPage } from '../pages/login/login';
 import { UserPage } from '../pages/user/user';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
@@ -15,7 +16,7 @@ import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
  
 const cloudSettings: CloudSettings = {
   'core': {
-    'app_id': 'APP_ID'
+    "app_id": "1147aee3"
   }
 };
 
@@ -25,6 +26,7 @@ const cloudSettings: CloudSettings = {
     HomePage,
     TestPage,
     UserPage,
+    LoginPage,
     ItemDetailsPage,
     ListPage
   ],
@@ -40,6 +42,7 @@ const cloudSettings: CloudSettings = {
     MyApp,
     HomePage,
     TestPage,
+    LoginPage,
     UserPage,
     ItemDetailsPage,
     ListPage
