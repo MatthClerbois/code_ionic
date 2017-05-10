@@ -12,13 +12,22 @@ import { MyApp } from '../../app/app';
   selector: 'page-test',
   templateUrl: 'test.html',
 })
+		
 export class TestPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+	items: Array<{title:string,value:number}>;						
+    constructor(public navCtrl: NavController, public navParams: NavParams) {
+    	this.items=[
+	    	{title:'test_1',value:1},
+	    	{title:'test_2',value:2},
+	    	{title:'test_3',value:3},
+	    	{title:'test_4',value:4},
+	    	{title:'test_5',value:5}
+    	]
+    }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Test');
-  }
+    ionViewDidLoad() {
+      console.log('ionViewDidLoad Test');
+    }
 
 }

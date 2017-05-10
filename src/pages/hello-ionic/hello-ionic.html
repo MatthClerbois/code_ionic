@@ -3,7 +3,12 @@
 		<button ion-button menuToggle>
 			<ion-icon name="menu"></ion-icon>
 		</button>
-		<ion-title>Mainsys</ion-title>
+		<ion-title><h1>Mainsys</h1><h3>Home</h3></ion-title>
+		<ion-buttons end>
+		     <button ion-button icon-only (click)="logout()">
+		       <ion-icon name="exit"></ion-icon>
+		     </button>
+	   </ion-buttons>
 	</ion-navbar>
 </ion-header>	
 <ion-content padding>
@@ -13,7 +18,7 @@
 		THE DIGITAL TRANSFORMATION OF BANKS. A leverage of innovation for the traditional and online banks wishing to answer the stakes, resulting from new uses of their customers.
 		</p>
 	</h2>
-<p>
+	<button ion-button (click)="userInfo()" full color="primary">info</button>
 
-
+    <h2>Welcome back, {{ user.details.name }}</h2>
 </ion-content>
